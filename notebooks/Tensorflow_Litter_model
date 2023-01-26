@@ -9,7 +9,7 @@ gpus = tf.config.experimental.list_physical_devices('GPU')
 for gpu in gpus:
     tf.config.experimental.set_memory_growth(gpu, True)
 
-# 2. VIEW SAMPLES OF THE DATA
+# 2. VIEW SAMPLE OF THE DATA
 img = cv2.imread("D:\\Frank\\Open_Litter_map\\DeepLearning\\Train\\Coffeecup\\CoffeeCup1.jpg")
 img.shape
 plt.imshow(cv2.cvtColor(img, cv2.COLOR_BGR2RGB))    # using a color channel converter to get to RGB
